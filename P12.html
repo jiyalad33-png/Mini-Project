@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <title>IPL Scoreboard</title>  
+        <link rel="stylesheet" href="style12.css"> 
+    </head> 
+    <body> 
+        <header>  
+            <center><table border="0">
+                <tr>
+                    <td><img src="c:\Users\admin\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\7DEE92EF114463DCA73D94C4D7026F1D29364D0A\transfers\2026-47\ipl.png" height="100"></td>
+                    <td><h1>IPL Scoreboard</h1></td>
+                </tr>
+            </table>
+            </center>
+        </header> 
+        <section>    
+            
+            <h2>Add Match</h2>    
+            <form id="addForm">      
+                <input id="team1" placeholder="Team 1" required>      
+                <input id="team2" placeholder="Team 2" required>      
+                <button>Add Match</button>    
+            </form>  </section>  <section>    
+                <h2>Match List</h2>   
+                <div id="matches">Loading...</div>  
+            </section>  
+            <section>    
+                <h2>Update Score</h2>    
+                <form id="scoreForm">      
+                    <input id="id" type="number" placeholder="Match ID" min="1" required>      
+                    <input id="runs" type="number" placeholder="Runs" min="0" required>      
+                    <input id="wickets" type="number" placeholder="Wickets (0-10)" min="0" max="10" required>      
+                    <input id="overs" type="number" placeholder="Overs" min="0" required>      
+                    <button>Update Score</button>    </form>  </section>  <p id="message"></p>  
+                    <script src="script12.js"></script> 
+    </body> 
+</html>
